@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <!-- Certificate Background -->
+  <rect x="100" y="100" width="600" height="400" rx="20" fill="#f8f9fa" stroke="#6366f1" stroke-width="8"/>
+  
+  <!-- Certificate Border -->
+  <rect x="120" y="120" width="560" height="360" rx="10" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Certificate Title -->
+  <text x="400" y="180" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#1e293b">CERTIFICATE OF ACHIEVEMENT</text>
+  
+  <!-- Certificate Content -->
+  <text x="400" y="240" font-family="Arial" font-size="16" text-anchor="middle" fill="#475569">This is to certify that</text>
+  <text x="400" y="280" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">JOHN DOE</text>
+  <text x="400" y="320" font-family="Arial" font-size="16" text-anchor="middle" fill="#475569">has successfully completed the course</text>
+  <text x="400" y="360" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">BLOCKCHAIN TECHNOLOGY</text>
+  
+  <!-- QR Code Representation -->
+  <rect x="140" y="400" width="80" height="80" rx="5" fill="#e2e8f0"/>
+  <rect x="150" y="410" width="60" height="60" rx="2" fill="#94a3b8"/>
+  <rect x="160" y="420" width="10" height="10" fill="#e2e8f0"/>
+  <rect x="180" y="420" width="10" height="10" fill="#e2e8f0"/>
+  <rect x="190" y="430" width="10" height="10" fill="#e2e8f0"/>
+  <rect x="160" y="440" width="10" height="10" fill="#e2e8f0"/>
+  <rect x="180" y="440" width="10" height="10" fill="#e2e8f0"/>
+  <rect x="170" y="450" width="10" height="10" fill="#e2e8f0"/>
+  <rect x="190" y="450" width="10" height="10" fill="#e2e8f0"/>
+  
+  <!-- Blockchain Hash Representation -->
+  <rect x="280" y="420" width="300" height="30" rx="5" fill="#e2e8f0"/>
+  <text x="430" y="440" font-family="Courier" font-size="12" text-anchor="middle" fill="#64748b">0xf731...8a91</text>
+  
+  <!-- Seal/Logo -->
+  <circle cx="580" y="440" r="40" fill="#6366f1" opacity="0.2"/>
+  <circle cx="580" y="440" r="30" fill="none" stroke="#6366f1" stroke-width="2"/>
+  <path d="M560 440 L580 420 L600 440 L580 460 Z" fill="#6366f1"/>
+  
+  <!-- Blockchain Nodes Representation -->
+  <circle cx="200" y="520" r="15" fill="#6366f1" opacity="0.7"/>
+  <circle cx="250" y="520" r="15" fill="#6366f1" opacity="0.7"/>
+  <circle cx="300" y="520" r="15" fill="#6366f1" opacity="0.7"/>
+  <circle cx="350" y="520" r="15" fill="#6366f1" opacity="0.7"/>
+  <circle cx="400" y="520" r="15" fill="#6366f1" opacity="0.7"/>
+  <circle cx="450" y="520" r="15" fill="#6366f1" opacity="0.7"/>
+  <circle cx="500" y="520" r="15" fill="#6366f1" opacity="0.7"/>
+  
+  <!-- Connecting Lines -->
+  <line x1="215" y1="520" x2="235" y2="520" stroke="#6366f1" stroke-width="2"/>
+  <line x1="265" y1="520" x2="285" y2="520" stroke="#6366f1" stroke-width="2"/>
+  <line x1="315" y1="520" x2="335" y2="520" stroke="#6366f1" stroke-width="2"/>
+  <line x1="365" y1="520" x2="385" y2="520" stroke="#6366f1" stroke-width="2"/>
+  <line x1="415" y1="520" x2="435" y2="520" stroke="#6366f1" stroke-width="2"/>
+  <line x1="465" y1="520" x2="485" y2="520" stroke="#6366f1" stroke-width="2"/>
+</svg>
