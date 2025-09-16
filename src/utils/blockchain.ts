@@ -48,7 +48,14 @@ export async function generateDocumentHash(file: File): Promise<string> {
  * @param metadata Additional document metadata
  * @returns Promise with transaction receipt
  */
-export async function registerDocument(documentHash: string, metadata: string): Promise<any> {
+export type RegisterDocumentResult = {
+  success: boolean;
+  transactionHash: string;
+  blockNumber: number;
+  timestamp: number;
+};
+
+export async function registerDocument(documentHash: string, metadata: string): Promise<RegisterDocumentResult> {
   try {
     // In a real application, you would use a wallet with private key
     // For demo purposes, we'll simulate a successful transaction
@@ -120,7 +127,17 @@ export async function verifyDocument(documentHash: string): Promise<{
  * @param transactionHash The transaction hash
  * @returns Promise with transaction details
  */
-export async function getTransactionDetails(transactionHash: string): Promise<any> {
+export type TransactionDetails = {
+  hash: string;
+  blockNumber: number;
+  timestamp: number;
+  from: string;
+  to: string;
+  gasUsed: number;
+  status: number;
+};
+
+export async function getTransactionDetails(transactionHash: string): Promise<TransactionDetails> {
   try {
     // In a real application, you would query the blockchain for transaction details
     // For demo purposes, we'll simulate transaction details

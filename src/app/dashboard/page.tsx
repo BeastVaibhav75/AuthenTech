@@ -6,10 +6,19 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import Link from 'next/link';
 
+type DocumentItem = {
+  id: string;
+  name: string;
+  recipient: string;
+  issueDate: string;
+  hash: string;
+  status: 'Issued' | 'Pending';
+};
+
 export default function DashboardPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState<{ email: string; role: string } | null>(null);
-  const [documents, setDocuments] = useState<any[]>([]);
+  const [documents, setDocuments] = useState<DocumentItem[]>([]);
   const router = useRouter();
 
   useEffect(() => {
