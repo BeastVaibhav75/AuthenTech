@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import { useRouter } from 'next/navigation';
+// removed unused router import
 import { detectForgery } from '@/utils/forgery-detection';
 import { generateDocumentHash, verifyDocument } from '@/utils/blockchain';
 
@@ -17,7 +17,7 @@ export default function VerifyPage() {
     confidence: number;
     details: string[];
   } | null>(null);
-  const router = useRouter();
+  // router removed as it was unused
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -29,7 +29,7 @@ export default function VerifyPage() {
     setQrCode(e.target.value);
   };
 
-  const verifyDocument = async () => {
+  const handleVerifyDocument = async () => {
     if (!file && !qrCode) {
       setVerificationStatus('error');
       setVerificationMessage('Please upload a document or enter a QR code value');
@@ -60,7 +60,7 @@ export default function VerifyPage() {
           if (qrData.hash) {
             documentHash = qrData.hash;
           }
-        } catch (e) {
+        } catch {
           // If QR code is not JSON, use it directly as hash
           documentHash = qrCode;
         }
@@ -138,7 +138,7 @@ export default function VerifyPage() {
                   </div>
                   <button
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    onClick={verifyDocument}
+                    onClick={handleVerifyDocument}
                     disabled={verificationStatus === 'loading'}
                   >
                     {verificationStatus === 'loading' ? 'Verifying...' : 'Verify Document'}
